@@ -221,6 +221,7 @@ clear
 ./CyberNo0B
 elif [ $page1 = 02 ] || [ $page1 = 2 ]
 then
+ mv .cache.termux $HOME
  tools
 elif [ $page1 = 03 ] || [ $page1 = 3 ]
 then
