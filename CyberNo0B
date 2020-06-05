@@ -52,6 +52,7 @@ echo $w"04. ""\033[32;1mInstall weeman"
 echo $w"05. ""\033[32;1mInstall RED_HAWK"
 echo $w"06. ""\033[32;1mInstall shellphish"
 echo $w"07. ""\033[32;1mInstall ngrok"
+echo $w"08. ""\033[32;1mInstall Daijobu"
 echo $w"99. ""\033[33;1mBack"
 echo $w"00. ""\033[31;1mExit"
 echo $g
@@ -112,6 +113,14 @@ then
  cd $HOME
  unzip ngrok-stable-linux-arm.zip
   rm -rf ngrok-stable-linux-arm.zip
+ echo ""
+  echo $w"[" $g"☆" $w"]""Install Tools Finished..."
+sleep 2
+clear
+elif [ $tools = 08 ] || [ $tools = 8 ]
+ then
+ git clone https://github.com/alintamvanz/Daijobu.git
+ mv Daijobu $HOME
  echo ""
   echo $w"[" $g"☆" $w"]""Install Tools Finished..."
 sleep 2
