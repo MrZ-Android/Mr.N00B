@@ -1,0 +1,245 @@
+#!/bin/sh
+a="\033[30;1m"
+r="\033[31;1m"
+c="\033[36;1m"
+b="\033[34;1m"
+g="\033[32;1m"
+y="\033[33;1m"
+p="\033[35;1m"
+w="\033[37;1m"
+clear
+
+logo() {
+echo $y "MR."$w"............................................"
+echo $w".."$r"###"$w"....."$r"##"$w"..."$r"##=##"$w"....."$r"##=##"$w"..."$r"##===##"$w"......."
+echo $w" ."$r"####"$w"...."$r"##"$w".."$r"##"$w"..."$r"##"$w"..."$r"##"$w"..."$r"##"$w".."$r"##"$w"...."$r"##"$w"......"
+echo $w".."$r"##"$w"."$r"##"$w"..."$r"##"$w"."$r"##"$w"....."$r"##"$w"."$r"##"$w"....."$r"##"$w"."$r"##"$w".."$r"##"$w"....."
+echo $w" ."$r"##"$w".."$r"##"$w".."$r"##"$w"."$r"##"$w"....."$r"##"$w"."$r"##"$w"....."$r"##"$w"."$r"##"$w"...."$r"##"$w"...."
+echo $w".."$r"##"$w"..."$r"##"$w"."$r"##"$w"."$r"##"$w"....."$r"##"$w"."$r"##"$w"....."$r"##"$w"."$r"##"$w"....."$r"##"$w"..."
+echo $w" ."$r"##"$w"...."$r"####"$w".."$r"##"$w"..."$r"##"$w"..."$r"##"$w"..."$r"##"$w".."$r"##"$w"...."$r"##"$w".."
+echo $w".."$r"##"$w"....."$r"###"$w"..."$r"##=##"$w"....."$r"##=##"$w"..."$r"##===##"$w"."
+echo $w"................................................"
+}
+
+trap ctrl_c INT
+ctrl_c() {
+echo ""
+echo $w"[" $r"!" $w"]" $r"( CTRL+C )  Detected, Trying To Exit This Program"
+sleep 2
+echo ""
+echo $g"Thanks To Used My Tools"
+sleep 1
+echo $w "I Am" $r "Mr No0B"
+sleep 3
+echo $y"Bye Bye Bye"
+exit
+}
+
+tools() {
+clear
+echo $p
+figlet CyberNo0B
+echo ""
+echo $r"Note : Tools Yg Elu Install Tersimpan Di HOME\n"
+echo $w"[==============================================]"
+echo $w" ||"$b"      Di Pilih Cok Yg Mau Di Install " $w"    || "
+echo $w"[==============================================]"
+echo ""
+echo $w"01. ""\033[32;1mInstall sqlmap"
+echo $w"02. ""\033[32;1mInstall seeker"
+echo $w"03. ""\033[32;1mInstall saycheese"
+echo $w"04. ""\033[32;1mInstall weeman"
+echo $w"05. ""\033[32;1mInstall RED_HAWK"
+echo $w"06. ""\033[32;1mInstall shellphish"
+echo $w"07. ""\033[32;1mInstall ngrok"
+echo $w"99. ""\033[33;1mBack"
+echo $w"00. ""\033[31;1mExit"
+echo $g
+read -p "CyberNo0B:~# " tools;
+
+if [ $tools = 01 ] || [ $tools = 1 ]
+then
+  git clone --depth 1  https://github.com/sqlmapproject/sqlmap sqlmap-dev 
+mv sqlmap-dev $HOME
+echo ""
+  echo $w"[" $g"☆" $w"]""Install Tools Finished..."
+sleep 2
+clear
+elif [ $tools = 02 ] || [ $tools = 2 ]
+then
+ git clone https://github.com/thewhiteh4t/seeker.git
+mv seeker $HOME
+echo ""
+  echo $w"[" $g"☆" $w"]""Install Tools Finished..."
+sleep 2
+clear
+elif [ $tools = 03 ] || [ $tools = 3 ]
+then
+ git clone https://github.com/thelinuxchoice/saycheese
+ mv saycheese $HOME
+echo ""
+  echo $w"[" $g"☆" $w"]""Install Tools Finished..."
+sleep 2
+clear
+elif [ $tools = 04 ] || [ $tools = 4 ]
+then
+ git clone https://github.com/evait-security/weeman
+ mv weeman $HOME
+echo ""
+  echo $w"[" $g"☆" $w"]""Install Tools Finished..."
+sleep 2
+clear
+elif [ $tools = 05 ] || [ $tools = 5 ]
+then
+ git clone https://github.com/Tuhinshubhra/RED_HAWK.git
+ mv RED_HAWK $HOME
+ echo ""
+  echo $w"[" $g"☆" $w"]""Install Tools Finished..."
+sleep 2
+clear
+elif [ $tools = 06 ] || [ $tools = 6 ]
+then
+  git clone https://github.com/thelinuxchoice/shellphish.git
+  mv shellphish $HOME
+  echo ""
+  echo $w"[" $g"☆" $w"]""Install Tools Finished..."
+sleep 2
+clear
+elif [ $tools = 07 ] || [ $tools = 7 ]
+then
+ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
+ mv ngrok-stable-linux-arm.zip $HOME
+ cd $HOME
+ unzip ngrok-stable-linux-arm.zip
+  rm -rf ngrok-stable-linux-arm.zip
+ echo ""
+  echo $w"[" $g"☆" $w"]""Install Tools Finished..."
+sleep 2
+clear
+elif [ $tools = 99 ]
+then
+clear
+./CyberNo0B
+elif [ $tools = 00 ]
+ then
+clear
+echo $p
+  figlet CyberNo0B
+  echo $w"[" $r"!" $w"]" $r" Exiting This Program"  
+sleep 2
+    echo ""
+echo $g"Thanks To Used My Tools"
+sleep 1
+echo $w "I Am" $r "Mr No0B"
+sleep 3
+echo $y"Bye Bye Bye"
+exit
+else
+ echo $r"\t\tWrong Input  !!"
+sleep 1
+fi
+}
+
+lagi=1
+while [ $lagi ]
+do
+
+clear
+logo
+sleep 0.5
+echo ""
+echo ""
+echo $r "Note :" $w"Install Bahan Dulu Bro.. \n\tBiar Tools Ny Berjalan Dengan Baik"
+echo ""
+echo $w"[==============================================]"
+echo $w" |  01." $p"Install Bahan" $w"                        |" 
+echo $w"[==============================================]"
+echo $w" |  02." $p"Install Tools" $w"                        |"
+echo $w"[==============================================]"
+echo $w" |  03." $p"Gunakan Tools Siap Saji" $w"              |"
+echo $w"[==============================================]"
+echo $w" |  00." $r"Exit" $w"                                 |"
+echo $w"[==============================================]" 
+echo $g
+echo ""
+read -p "CyberNo0B:~# " page1;
+
+if [ $page1 = 01 ] || [ $page1 = 1 ]
+then
+clear 
+echo $r" \t\tWARNING...!!"
+echo $r"\nInstall Bahan Akan Memakan Waktu Yg Cukup Lama"
+echo $r"\nSilahkan Tunggu Dan Pastikan Jaringan""\n\tDalam Kondisi Stabil"
+echo ""
+sleep 5
+  echo $b"Starting...."
+ apt update && apt upgrade -y
+ pkg install python -y
+ pkg install python2 -y 
+ pkg install git -y
+ pkg install ruby -y
+ pkg install php -y 
+ pkg install bash -y
+ pkg install figlet -y
+ pkg install toilet -y
+ pkg install imagemagick -y
+ pkg install exiv2 -y
+ pkg install httrack -y
+ pkg install bs4 -y
+ pkg install nano -y
+ pkg install wget -y
+ pkg install curl -y
+ pkg install zip -y
+ pkg install unzip -y
+ pip install --upgrade pip
+ pip2 install --upgrade pip
+ pip install mechanize && pip install requests
+ pip2 install mechanize && pip install requests
+ gem install lolcat
+ apt-get update --fix-missing
+ apt install exiv2 -y
+ apt install httrack -y
+ apt install curl -y
+ apt install imagemagick -y
+ apt install ruby -y
+ apt-get update --fix-missing
+ apt install zip -y
+ apt install unzip -y
+echo ""
+echo $w"[" $g"☆" $w"]"  $c"Install Bahan Selesai..."
+sleep 2
+clear
+./CyberNo0B
+elif [ $page1 = 02 ] || [ $page1 = 2 ]
+then
+ tools
+elif [ $page1 = 03 ] || [ $page1 = 3 ]
+then
+./start
+elif [ $page1 = 00 ]
+then
+ clear
+ echo $g"FROM :"
+echo ""
+sleep 1
+ echo $p
+ figlet CyberNo0B
+echo ""
+echo ""
+sleep 1
+echo $w "I Am" $r "Mr No0B"
+sleep 1
+echo $g"\t Thanks For Using My System"
+sleep 1
+echo $b"\nGunakanlah Secara Bijak"
+sleep 1
+echo $y"\n\t Bye Bye"
+echo "\033[0m"
+exit
+
+else
+ echo $r"\t\tWrong Input  !!"
+sleep 1
+fi
+
+done
