@@ -1,0 +1,72 @@
+#!/bin/sh
+a="\033[30;1m"
+b="\033[34;1m"
+r="\033[31;1m"
+g="\033[32;1m"
+
+log() {
+echo "          ,_,_,_,   _,,_,_,_,
+@@@       @!@!@!@  /!!@@!@!@\  @@@  @@!@   @@@
+@@!      @@!   !@@ @@!         @@!  @!!@   @@!
+@!!      @!!   !!@ @!!  _,_,   @!!  !@@!@  @!@
+!!!      !!!   !!! @@! |@!@!\  !!@  @!@ !@ @!@
+@!!      @!!   !!@ !@@    !@@! !@@  !!@  @!!@@
+@@!_,_,_ @@!_,_!@@ @!@_,_,_@!_ @!!  !@@   @@@!,
+@!@!@!@!/ @!@!@!@  !@!@!@!@!@/ @@!  @@!    !@@"
+}
+
+titik() {
+echo "!   !   !   !   !   !   !   !   !   !   !   !
+  !   !   !   !   !   !   !   !   !   !   !   
+!   !   !   !   !   !   !   !   !   !   !   !
+"
+}
+psn1() {
+echo ""
+echo "Login Dulu Boss !!\nKalau Gak Tau Gak Usah Login :)"
+}
+
+psn2() {
+echo "MasukKan UserName & PassWord  ! "
+echo ""
+echo -n "UserName : "
+read usr
+echo -n "PassWord : "
+read pw
+
+if [  $usr  = MR.N00B ] && [ $pw = 123 ]
+then
+   echo $b"Login SucCes...\033[0m"
+   sleep 1
+   clear
+   exit
+else
+   echo $r"Login Gagal..."
+   sleep 1
+   clear
+   echo $r
+   log
+   echo $r
+   titik
+   echo $r
+   psn2
+fi
+}
+
+
+lagi=1
+while [ $lagi ]
+do
+
+clear
+echo $b
+log
+ echo $r
+titik
+ sleep 1
+ echo $g
+ psn1
+ sleep 2
+echo $b
+ psn2
+done
