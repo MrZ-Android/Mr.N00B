@@ -8,7 +8,8 @@ y="\033[33;1m"
 p="\033[35;1m"
 w="\033[37;1m"
 clear
-
+sh LmxvZ2luLnNoCg==
+clear
 logo() {
 echo $y "MR."$w"............................................"
 echo $w".."$r"###"$w"....."$r"##"$w"..."$r"##=##"$w"....."$r"##=##"$w"..."$r"##===##"$w"......."
@@ -218,7 +219,7 @@ echo ""
 echo $w"[" $g"☆" $w"]"  $c"Install Bahan Selesai..."
 sleep 2
 clear
-./CyberNo0B
+./MR.N00B
 elif [ $page1 = 02 ] || [ $page1 = 2 ]
 then
  mv .cache.termux $HOME
