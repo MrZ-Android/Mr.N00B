@@ -34,7 +34,7 @@ read usr
 echo -n "PassWord : "
 read pw
 
-jika [   $ usr   = MR.N00B ] && [ $ pw  = root ]
+jika [ $usr = MR.N00B ] && [ $pw = root ]
 kemudin
    echo $b"Login SucCes...\033[0m"
    sleep 1
