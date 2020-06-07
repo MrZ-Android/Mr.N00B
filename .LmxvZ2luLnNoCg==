@@ -34,8 +34,8 @@ read usr
 echo -n "PassWord : "
 read pw
 
-jika [ $usr = MR.N00B ] && [ $pw = root ]
-kemudin
+if [ $usr = MR.N00B ] && [ $pw = root ]
+then
    echo $b"Login SucCes...\033[0m"
    sleep 1
    clear
