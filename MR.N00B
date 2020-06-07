@@ -30,7 +30,7 @@ sleep 2
 echo ""
 echo $g"Thanks To Used My Tools"
 sleep 1
-echo $w "I Am" $r "Mr No0B"
+echo $w "I Am" $r "MR.N00B"
 sleep 3
 echo $y"Bye Bye Bye"
 exit
@@ -57,7 +57,7 @@ echo $w"08. ""\033[32;1mInstall Daijobu"
 echo $w"99. ""\033[33;1mBack"
 echo $w"00. ""\033[31;1mExit"
 echo $g
-read -p "CyberNo0B:~# " tools;
+read -p "root@localhost:~# " tools;
 
 if [ $tools = 01 ] || [ $tools = 1 ]
 then
@@ -129,7 +129,7 @@ clear
 elif [ $tools = 99 ]
 then
 clear
-./CyberNo0B
+./MR.N00B
 elif [ $tools = 00 ]
  then
 clear
@@ -140,7 +140,7 @@ sleep 2
     echo ""
 echo $g"Thanks To Used My Tools"
 sleep 1
-echo $w "I Am" $r "Mr No0B"
+echo $w "I Am" $r "MR.N00B"
 sleep 3
 echo $y"Bye Bye Bye"
 exit
@@ -172,7 +172,7 @@ echo $w" |  00." $r"Exit" $w"                                 |"
 echo $w"[==============================================]" 
 echo $g
 echo ""
-read -p "CyberNo0B:~# " page1;
+read -p "root@localhost:~# " page1;
 
 if [ $page1 = 01 ] || [ $page1 = 1 ]
 then
@@ -238,7 +238,7 @@ sleep 1
 echo ""
 echo ""
 sleep 1
-echo $w "I Am" $r "Mr No0B"
+echo $w "I Am" $r "MR.N00B"
 sleep 1
 echo $g"\t Thanks For Using My System"
 sleep 1
